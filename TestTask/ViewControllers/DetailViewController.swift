@@ -12,8 +12,9 @@ class DetailViewController: UIViewController {
  
     public var ItemName :String = ""
    
-    @IBOutlet weak var LableContent: UILabel!
+  
     
+    @IBOutlet weak var LableContent: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         LableContent.text = ItemName

@@ -13,11 +13,8 @@
 		FAD3CE7124DD561200812587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD3CE7024DD561200812587 /* Assets.xcassets */; };
 		FAD3CE7424DD561200812587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3CE7224DD561200812587 /* LaunchScreen.storyboard */; };
 		FAD3CE7E24DD5EFA00812587 /* BL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE7D24DD5EFA00812587 /* BL.swift */; };
-		FAD3CE8024DD672E00812587 /* TableViewControllerForMostViewed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE7F24DD672E00812587 /* TableViewControllerForMostViewed.swift */; };
-		FAD3CE8224DD6F8200812587 /* TableViewControllerForFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE8124DD6F8200812587 /* TableViewControllerForFavourites.swift */; };
-		FAD3CE8624DD700F00812587 /* TableViewControllerForMostEmailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE8524DD700F00812587 /* TableViewControllerForMostEmailed.swift */; };
-		FAD3CE8C24DD77B500812587 /* TableViewControllerForMostShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE8B24DD77B500812587 /* TableViewControllerForMostShared.swift */; };
 		FAD3CE8E24DD821200812587 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE8D24DD821200812587 /* DetailViewController.swift */; };
+		FAD3CE9524E1D41600812587 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE9424E1D41600812587 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +26,8 @@
 		FAD3CE7324DD561200812587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD3CE7524DD561200812587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD3CE7D24DD5EFA00812587 /* BL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL.swift; sourceTree = "<group>"; };
-		FAD3CE7F24DD672E00812587 /* TableViewControllerForMostViewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForMostViewed.swift; sourceTree = "<group>"; };
-		FAD3CE8124DD6F8200812587 /* TableViewControllerForFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForFavourites.swift; sourceTree = "<group>"; };
-		FAD3CE8524DD700F00812587 /* TableViewControllerForMostEmailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForMostEmailed.swift; sourceTree = "<group>"; };
-		FAD3CE8B24DD77B500812587 /* TableViewControllerForMostShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForMostShared.swift; sourceTree = "<group>"; };
 		FAD3CE8D24DD821200812587 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAD3CE9424E1D41600812587 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +74,7 @@
 		FAD3CE9124DDA45C00812587 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAD3CE8124DD6F8200812587 /* TableViewControllerForFavourites.swift */,
-				FAD3CE8524DD700F00812587 /* TableViewControllerForMostEmailed.swift */,
-				FAD3CE7F24DD672E00812587 /* TableViewControllerForMostViewed.swift */,
-				FAD3CE8B24DD77B500812587 /* TableViewControllerForMostShared.swift */,
+				FAD3CE9424E1D41600812587 /* TableViewController.swift */,
 				FAD3CE8D24DD821200812587 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
@@ -177,13 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD3CE8024DD672E00812587 /* TableViewControllerForMostViewed.swift in Sources */,
 				FAD3CE6624DD560E00812587 /* AppDelegate.swift in Sources */,
-				FAD3CE8224DD6F8200812587 /* TableViewControllerForFavourites.swift in Sources */,
-				FAD3CE8C24DD77B500812587 /* TableViewControllerForMostShared.swift in Sources */,
 				FAD3CE7E24DD5EFA00812587 /* BL.swift in Sources */,
-				FAD3CE8624DD700F00812587 /* TableViewControllerForMostEmailed.swift in Sources */,
 				FAD3CE6824DD560E00812587 /* SceneDelegate.swift in Sources */,
+				FAD3CE9524E1D41600812587 /* TableViewController.swift in Sources */,
 				FAD3CE8E24DD821200812587 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
