@@ -28,50 +28,67 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return favorites.count
+        switch tabBarController?.selectedIndex {
+              case 0:
+                return favorites.count
+              case 1:
+                return mostEmailed.count
+              case 2:
+                return mostShared.count
+              case 3:
+                return mostViewed.count
+              default:
+                  return 5
+              }
+              
+        
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if tabBarController?.selectedIndex == 0  {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-            cell.textLabel?.text = favorites[indexPath.row]
-
+      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        switch tabBarController?.selectedIndex {
+        case 0:
+             cell.textLabel?.text = favorites[indexPath.row]
+             return cell
+        case 1:
+             cell.textLabel?.text = mostEmailed[indexPath.row]
+             return cell
+        case 2:
+             cell.textLabel?.text = mostShared[indexPath.row]
+             return cell
+        case 3:
+            cell.textLabel?.text = mostViewed[indexPath.row]
+            return cell
+        default:
             return cell
         }
-        else if tabBarController?.selectedIndex == 1  {
-                   let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-            cell.textLabel?.text = mostEmailed[indexPath.row]
-
-                   return cell
-               }
-        else if tabBarController?.selectedIndex == 2  {
-                          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-                   cell.textLabel?.text = mostShared[indexPath.row]
-
-                          return cell
-                      }
-        else{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-  cell.textLabel?.text = mostViewed[indexPath.row]
-            return cell}
         
     }
+        
   
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
         tableView.deselectRow(at: indexPath, animated: true)
-
-     let favoriteItem = favorites[indexPath.row]
+  var currentItem = "Here is name!"
    
+   switch tabBarController?.selectedIndex {
+          case 0:
+              currentItem = favorites[indexPath.row]
+          case 1:
+              currentItem = mostEmailed[indexPath.row]
+          case 2:
+              currentItem = mostShared[indexPath.row]
+          case 3:
+              currentItem = mostViewed[indexPath.row]
+          default:
+             currentItem = "Here is name of your articl!"
+          }
+          
      // Safe Push VC
      if let viewController = UIStoryboard(name: "Main", bundle: nil)
         .instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController {
-         viewController.ItemName =  favoriteItem
+         viewController.ItemName =  currentItem
          
          if let navigator = navigationController {
              navigator.pushViewController(viewController, animated: true)
