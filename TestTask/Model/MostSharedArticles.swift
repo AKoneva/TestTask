@@ -7,9 +7,10 @@ import Alamofire
 
 // MARK: - MostSharedArticles
 struct MostSharedArticles: Codable {
-    let status, copyright: String
-    let numResults: Int = 20
-    let results: [results]
+    let status: String
+    let copyright: String
+    let numResults: Int?
+    let results: [results]?
 
     enum CodingKeys: String, CodingKey {
         case status, copyright

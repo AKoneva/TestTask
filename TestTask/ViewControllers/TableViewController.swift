@@ -33,12 +33,11 @@ class TableViewController: UITableViewController {
               case 0:
                 return favorites.count
               case 1:
-                return mostEmailed.count
+                return mea.results!.count
               case 2:
-                return mostShared.count
+                return msa.results!.count
               case 3:
-                
-                return mostViewed.count
+               return mva.results!.count
                 
               default:
                   return 5
@@ -55,13 +54,13 @@ class TableViewController: UITableViewController {
              cell.textLabel?.text = favorites[indexPath.row]
              return cell
         case 1:
-             cell.textLabel?.text = mostEmailed[indexPath.row]
+             cell.textLabel?.text = mea.results![indexPath.row].title
              return cell
         case 2:
-             cell.textLabel?.text = mostShared[indexPath.row]
+             cell.textLabel?.text = msa.results![indexPath.row].title
              return cell
         case 3:
-            cell.textLabel?.text = mostViewed[indexPath.row]
+            cell.textLabel?.text = mva.results![indexPath.row].title
             return cell
         default:
             return cell
@@ -79,11 +78,11 @@ class TableViewController: UITableViewController {
           case 0:
               currentItem = favorites[indexPath.row]
           case 1:
-              currentItem = mostEmailed[indexPath.row]
+              currentItem = mea.results![indexPath.row].title
           case 2:
-              currentItem = mostShared[indexPath.row]
+              currentItem = msa.results![indexPath.row].title
           case 3:
-              currentItem = mostViewed[indexPath.row]
+              currentItem = mva.results![indexPath.row].title
           default:
              currentItem = "Here is name of your articl!"
           }

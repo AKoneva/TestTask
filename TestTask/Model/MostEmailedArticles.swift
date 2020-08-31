@@ -7,14 +7,17 @@ import Alamofire
 
 // MARK: - MostEmailedArticles
 struct MostEmailedArticles: Codable {
-    let status, copyright: String
-    let numResults: Int
-    let results: [_Result]
+    let status : String
+       let copyright: String
+       let numResults: Int?
+       let results: [_Result]?
+ 
 
     enum CodingKeys: String, CodingKey {
         case status, copyright
         case numResults
         case results
+   
     }
 }
 
@@ -24,12 +27,12 @@ struct _Result: Codable {
     let uri: String
     let url: String
     let id, assetID: Int?
-    let source:String
+    let source:String?
     let publishedDate, updated, section, subsection: String?
     let nytdsection, adxKeywords: String?
     let column: Int?
     let byline: String
-    let type: String
+    let type: String?
     let title, abstract: String
     let desFacet, orgFacet, perFacet, geoFacet: [String]?
     let media: [Media_]?
@@ -54,11 +57,11 @@ struct _Result: Codable {
 
 // MARK: - Media
 struct Media_: Codable {
-    let type:String
-    let subtype: String
+    let type:String?
+    let subtype: String?
     let caption, copyright: String
     let approvedForSyndication: Int?
-    let mediaMetadata: [MediaMetadat]
+    let mediaMetadata: [MediaMetadat]?
 
     enum CodingKeys: String, CodingKey {
         case type, subtype, caption, copyright
@@ -70,9 +73,9 @@ struct Media_: Codable {
 
 // MARK: - MediaMetadatum
 struct MediaMetadat: Codable {
-    let url: String
-    let format: String
-    let height, width: Int
+    let url: String?
+    let format: String?
+    let height, width: Int?
 }
 
 

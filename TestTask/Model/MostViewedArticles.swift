@@ -7,10 +7,10 @@ import Foundation
 
 // MARK: - MostViewedArticles
  struct MostViewedArticles: Codable {
-    let status :String
+    let status : String
     let copyright: String
-    let numResults: Int = 10
-    let results: [Results]
+    let numResults: Int?
+    let results: [Results]?
     
     
 }
