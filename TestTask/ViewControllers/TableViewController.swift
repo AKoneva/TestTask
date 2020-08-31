@@ -8,11 +8,14 @@
 
 import UIKit
 
+
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    //    getMostEmailed()
+      //  getMostShared()
+        getMostViewed()
         // Uncomment the following line to preserve selection between presentations
        // self.clearsSelectionOnViewWillAppear = false
 
@@ -36,7 +39,9 @@ class TableViewController: UITableViewController {
               case 2:
                 return mostShared.count
               case 3:
-                return mostViewed.count
+                
+                return mva.numResults
+                
               default:
                   return 5
               }
