@@ -86,30 +86,3 @@ struct MediaMetadatum: Codable {
     let height, width: Int
 }
 
-enum Format: String, CodingKey {
-    case mediumThreeByTwo210 = "mediumThreeByTwo210"
-    case mediumThreeByTwo440 = "mediumThreeByTwo440"
-    case standardThumbnail = "Standard Thumbnail"
-}
-
-enum Subtype: String, CodingKey {
-    case photo = "photo"
-}
-
-enum MediaType: String, CodingKey {
-    case image = "image"
-}
-
-enum Source: String, CodingKey {
-    case newYorkTimes = "New York Times"
-}
-
-enum Subsection: String, CodingKey {
-    case empty = ""
-    case europe = "Europe"
-    case television = "Television"
-}
-
-enum ResultType: String, CodingKey {
-    case article = "Article"
-}
