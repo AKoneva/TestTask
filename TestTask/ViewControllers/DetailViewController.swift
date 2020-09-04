@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var byAuthor: UILabel!
    
     
+    @IBOutlet weak var ImageOfArticle: UIImageView!
     @IBOutlet weak var articleText: UILabel!
     @IBOutlet weak var title_detail: UILabel!
     @IBAction func saveToFavourite(_ sender: Any) {
@@ -31,7 +32,7 @@ class DetailViewController: UIViewController {
         articleText.text = ContextOfArticle
         print(ContextOfArticle)
         byAuthor.text = Author
-      // setImage (from: ImageUrl)
+       setImage (from: ImageUrl)
 }
     /*
     // MARK: - Navigation
@@ -42,18 +43,18 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-//    func setImage(from url: String) {
-//        guard let imageURL = URL(string: url) else { return }
-//
-//            // just not to cause a deadlock in UI!
-//        DispatchQueue.global().async {
-//            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-//
-//            let image = UIImage(data: imageData)
-//            DispatchQueue.main.async {
-//                self.ImageOfArticle.image = image
-//            }
-//        }
-//    }
+    func setImage(from url: String) {
+        guard let imageURL = URL(string: url) else { return }
+
+            // just not to cause a deadlock in UI!
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+
+            let image = UIImage(data: imageData)
+            DispatchQueue.main.async {
+                self.ImageOfArticle.image = image
+            }
+        }
+    }
 
 }

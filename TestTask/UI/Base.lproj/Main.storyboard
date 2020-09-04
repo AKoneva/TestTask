@@ -116,6 +116,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ImageOfArticle" destination="ZL4-iq-Nle" id="S1t-Ca-r0c"/>
                         <outlet property="articleText" destination="khS-wS-sAf" id="DnS-aN-fOr"/>
                         <outlet property="byAuthor" destination="CMB-3w-LvB" id="flw-vS-HcE"/>
                         <outlet property="title_detail" destination="cWi-GD-VbR" id="B2Q-1e-Zsz"/>
