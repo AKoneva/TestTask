@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
-var favorites : [String] = ["df","as","dr","awse","WSERD","BNV"]
+let favorites : [String] = ["Что ","за","херня","происходит","здесь","блять"]
  let decoder = JSONDecoder()
 var mea = MostEmailedArticles(status: "", copyright: "", numResults: 0, results: nil)
 var msa = MostSharedArticles(status: "", copyright: "", numResults: 0, results: nil)
@@ -117,7 +117,7 @@ func getMostViewed(){
 }
 func fillDataTheMostEmailedArticles(fix_mea: MostEmailedArticles){
     mea = fix_mea
-   
+    
 }
 func fillDataTheMostSharedArticles(fix_msa: MostSharedArticles){
     msa = fix_msa
@@ -127,3 +127,4 @@ func fillDataTheMostViewedArticles(fix_mva: MostViewedArticles){
     mva = fix_mva
    
 }
+

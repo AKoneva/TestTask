@@ -12,17 +12,37 @@ import UIKit
 class DetailViewController: UIViewController {
  
     public var ItemName :String = ""
-   
-  
+    public var ContextOfArticle:String = ""
+    public var ImageUrl: String = "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&qu"
+    public var Author:String = ""
+    @IBOutlet weak var byAuthor: UILabel!
+    @IBOutlet weak var ImageOfArticle: UIImageView!
     
-    @IBOutlet weak var LableContent: UILabel!
+    @IBOutlet weak var articleText: UILabel!
+    @IBOutlet weak var title_detail: UILabel!
+    @IBAction func saveToFavourite(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        LableContent.text = ItemName
+        title_detail.text = ItemName
+        articleText.text = ContextOfArticle
+        byAuthor.text = Author
+       
+       let url = URL(string: "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081")
+        if let data = try? Data(contentsOf: url!)
+       {
+           ImageOfArticle.image = UIImage(data: data)
+       }
+       else {
+        print("Couldnt dowload image")
         }
-    
+            }
+       
+        
 
-    
+
+}
     
 
     /*
@@ -34,4 +54,4 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
+
