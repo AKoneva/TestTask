@@ -31,6 +31,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch tabBarController?.selectedIndex {
               case 0:
+                
                 return favorites.count
               case 1:
                 return mea.results!.count
@@ -52,15 +53,19 @@ class TableViewController: UITableViewController {
         switch tabBarController?.selectedIndex {
         case 0:
              cell.textLabel?.text = favorites[indexPath.row]
+             cell.imageView?.image = UIImage(named: "favorite")
              return cell
         case 1:
              cell.textLabel?.text = mea.results![indexPath.row].title
+             cell.imageView?.image = UIImage(named: "emailed")
              return cell
         case 2:
              cell.textLabel?.text = msa.results![indexPath.row].title
+             cell.imageView?.image = UIImage(named: "shared")
              return cell
         case 3:
             cell.textLabel?.text = mva.results![indexPath.row].title
+            cell.imageView?.image = UIImage(named: "viewed")
             return cell
         default:
             return cell
