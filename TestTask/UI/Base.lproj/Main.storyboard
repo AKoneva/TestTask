@@ -16,12 +16,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="116" id="4az-BJ-Huh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="116"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="iUx-WR-duo" imageView="7A5-92-LmW" rowHeight="97" style="IBUITableViewCellStyleDefault" id="4az-BJ-Huh">
+                                <rect key="frame" x="0.0" y="28" width="414" height="97"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4az-BJ-Huh" id="HTM-kd-1DN">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="116"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iUx-WR-duo">
+                                            <rect key="frame" x="75" y="0.0" width="300" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <string key="text">Title
+
+</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="icon" id="7A5-92-LmW">
+                                            <rect key="frame" x="20" y="28.5" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -223,6 +240,7 @@
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="first" width="30" height="30"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="icon" width="40" height="40"/>
         <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
