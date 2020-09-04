@@ -14,12 +14,13 @@ class DetailViewController: UIViewController {
  
     public var ItemName :String = ""
     public var ContextOfArticle:String = ""
-    public var ImageUrl: String = "https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"
+   // public var ImageUrl: String = "https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"
+    public var ImageUrl: String = ""
     public var Author:String = ""
     @IBOutlet weak var byAuthor: UILabel!
    
-    
-    @IBOutlet weak var ImageOfArticle: UIImageView!
+  
+    @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var articleText: UILabel!
     @IBOutlet weak var title_detail: UILabel!
     @IBAction func saveToFavourite(_ sender: Any) {
@@ -52,7 +53,7 @@ class DetailViewController: UIViewController {
 
             let image = UIImage(data: imageData)
             DispatchQueue.main.async {
-                self.ImageOfArticle.image = image
+                self.Image.image = image
             }
         }
     }
