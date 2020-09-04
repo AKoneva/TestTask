@@ -84,25 +84,24 @@ class TableViewController: UITableViewController {
               currentItem = mea.results![indexPath.row].title
               textOfArticl = mea.results![indexPath.row].abstract
               authorOfArticl = mea.results![indexPath.row].byline
-  
-           
+      
     
           case 2:
               currentItem = msa.results![indexPath.row].title
      textOfArticl = msa.results![indexPath.row].abstract
     authorOfArticl = msa.results![indexPath.row].byline
-             imageUrl = "https://static01.nyt.com/images/2020/09/02/opinion/sunday/02sandel/02sandal-thumbStandard.png"
+          //   imageUrl = "https://static01.nyt.com/images/2020/09/02/opinion/sunday/02sandel/02sandal-thumbStandard.png"
 
           case 3:
               currentItem = mva.results![indexPath.row].title
      textOfArticl = mva.results![indexPath.row].abstract
     authorOfArticl = mva.results![indexPath.row].byline
-             // imageUrl =  mva.results![indexPath.row].media![indexPath.row].mediaMetadata![indexPath.row].url
+      //  imageUrl =  mva.results![indexPath.row].media![indexPath.row].mediaMetadata![indexPath.row].url
           default:
-             currentItem = "Here is name of your articl!"
-     textOfArticl = "Here is your news text dpoifhugayufjgklgfkaijhusdyifjaelkhjscfnalksdjhb"
-    authorOfArticl = "by me"
-    imageUrl = "https://static01.nyt.com/images/2020/09/02/opinion/sunday/02sandel/02sandal-thumbStandard.png"
+              currentItem = "Here is name of your articl!"
+              textOfArticl = "Here is your news text dpoifhugayufjgklgfkaijhusdyifjaelkhjscfnalksdjhb"
+              authorOfArticl = "by me"
+           //   imageUrl = "https://static01.nyt.com/images/2020/09/02/opinion/sunday/02sandel/02sandal-thumbStandard.png"
           }
           
      // Safe Push VC
@@ -111,7 +110,7 @@ class TableViewController: UITableViewController {
          viewController.ItemName =  currentItem
         viewController.ContextOfArticle = textOfArticl
         viewController.Author = authorOfArticl
-        viewController.ImageUrl = imageUrl
+       // viewController.ImageUrl = imageUrl
          if let navigator = navigationController {
              navigator.pushViewController(viewController, animated: true)
          }

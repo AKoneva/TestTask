@@ -7,4 +7,5 @@ target 'TestTask' do
 
   # Pods for Table
 pod 'Alamofire'
+pod 'AlamofireImage'
 end

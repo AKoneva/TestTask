@@ -9,14 +9,15 @@
 import UIKit
 
 
+
 class DetailViewController: UIViewController {
  
     public var ItemName :String = ""
     public var ContextOfArticle:String = ""
-    public var ImageUrl: String = "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&qu"
+    public var ImageUrl: String = "https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"
     public var Author:String = ""
     @IBOutlet weak var byAuthor: UILabel!
-    @IBOutlet weak var ImageOfArticle: UIImageView!
+   
     
     @IBOutlet weak var articleText: UILabel!
     @IBOutlet weak var title_detail: UILabel!
@@ -26,25 +27,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title_detail.text = ItemName
-        articleText.text = ContextOfArticle
-        byAuthor.text = Author
-       
-       let url = URL(string: "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081")
-        if let data = try? Data(contentsOf: url!)
-       {
-           ImageOfArticle.image = UIImage(data: data)
-       }
-       else {
-        print("Couldnt dowload image")
-        }
-            }
-       
         
-
-
+        articleText.text = ContextOfArticle
+        print(ContextOfArticle)
+        byAuthor.text = Author
+      // setImage (from: ImageUrl)
 }
-    
-
     /*
     // MARK: - Navigation
 
@@ -54,4 +42,18 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+//    func setImage(from url: String) {
+//        guard let imageURL = URL(string: url) else { return }
+//
+//            // just not to cause a deadlock in UI!
+//        DispatchQueue.global().async {
+//            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+//
+//            let image = UIImage(data: imageData)
+//            DispatchQueue.main.async {
+//                self.ImageOfArticle.image = image
+//            }
+//        }
+//    }
 
+}
