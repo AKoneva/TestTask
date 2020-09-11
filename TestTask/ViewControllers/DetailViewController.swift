@@ -14,26 +14,30 @@ class DetailViewController: UIViewController {
  
     public var ItemName :String = ""
     public var ContextOfArticle:String = ""
-   // public var ImageUrl: String = "https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg"
     public var ImageUrl: String = ""
     public var Author:String = ""
+    public var data: String = ""
+    
+    
+    @IBOutlet weak var dataTime: UILabel!
     @IBOutlet weak var byAuthor: UILabel!
-   
-  
-    @IBOutlet weak var Image: UIImageView!
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var articleText: UILabel!
     @IBOutlet weak var title_detail: UILabel!
-    @IBAction func saveToFavourite(_ sender: Any) {
+  
+    @IBAction func addToFavourite(_ sender: Any) {
+        
         
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title_detail.text = ItemName
-        
+        dataTime.text = data
         articleText.text = ContextOfArticle
-        print(ContextOfArticle)
         byAuthor.text = Author
-       setImage (from: ImageUrl)
+        setImage (from: ImageUrl)
 }
     /*
     // MARK: - Navigation
@@ -44,16 +48,17 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+      // MARK: - set image
     func setImage(from url: String) {
-        guard let imageURL = URL(string: url) else { return }
+            guard let imageURL = URL(string: url) else { return }
 
             // just not to cause a deadlock in UI!
-        DispatchQueue.global().async {
+            DispatchQueue.global().async {
             guard let imageData = try? Data(contentsOf: imageURL) else { return }
 
             let image = UIImage(data: imageData)
             DispatchQueue.main.async {
-                self.Image.image = image
+                self.image.image = image
             }
         }
     }

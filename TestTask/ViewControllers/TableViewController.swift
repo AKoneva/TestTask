@@ -31,7 +31,6 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch tabBarController?.selectedIndex {
               case 0:
-                
                 return favorites.count
               case 1:
                 return mea.results!.count
@@ -77,10 +76,10 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
         tableView.deselectRow(at: indexPath, animated: true)
-  var currentItem = ""
-   var textOfArticl = ""
+        var currentItem = ""
+        var textOfArticl = ""
         var authorOfArticl = ""
-     
+        var datatime = ""
    switch tabBarController?.selectedIndex {
           case 0:
               currentItem = favorites[indexPath.row]
@@ -89,46 +88,51 @@ class TableViewController: UITableViewController {
               currentItem = mea.results![indexPath.row].title
               textOfArticl = mea.results![indexPath.row].abstract
               authorOfArticl = mea.results![indexPath.row].byline
-               
+              datatime = mea.results![indexPath.row].publishedDate ?? " "
     
           case 2:
               currentItem = msa.results![indexPath.row].title
-     textOfArticl = msa.results![indexPath.row].abstract
-    authorOfArticl = msa.results![indexPath.row].byline
-         
+              textOfArticl = msa.results![indexPath.row].abstract
+              authorOfArticl = msa.results![indexPath.row].byline
+              datatime = msa.results![indexPath.row].publishedDate ?? " "
+    
           case 3:
               currentItem = mva.results![indexPath.row].title
-     textOfArticl = mva.results![indexPath.row].abstract
-    authorOfArticl = mva.results![indexPath.row].byline
-     
-          default:
-              currentItem = "Here is name of your articl!"
-              textOfArticl = "Here is your news text dpoifhugayufjgklgfkaijhusdyifjaelkhjscfnalksdjhb"
-              authorOfArticl = "by me"
+              textOfArticl = mva.results![indexPath.row].abstract
+              authorOfArticl = mva.results![indexPath.row].byline
+              datatime = mva.results![indexPath.row].publishedDate ?? " "
+          default: break
+           
         }
           
-     // Safe Push VC
+      // MARK: -  Safe Push VC
      if let viewController = UIStoryboard(name: "Main", bundle: nil)
         .instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController {
-         viewController.ItemName =  currentItem
+        viewController.ItemName =  currentItem
         viewController.ContextOfArticle = textOfArticl
         viewController.Author = authorOfArticl
         viewController.ImageUrl = "https://www.tadviser.ru/images/5/54/The_New_York_Times.png"
+        viewController.data = datatime
          if let navigator = navigationController {
              navigator.pushViewController(viewController, animated: true)
          }
      }
     
     }
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+        switch tabBarController?.selectedIndex {
+                 case 0:
+                     return true
+        default: return false
+            
+        }
+        
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -138,7 +142,7 @@ class TableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
