@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2A343F7A6EC933A010767375 /* Pods_TestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E2C42A835E569AE8B6D0F7 /* Pods_TestTask.framework */; };
+<<<<<<< Updated upstream
 		FAC8E8E124FA71D500F03A36 /* MostViewedArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E8E024FA71D500F03A36 /* MostViewedArticles.swift */; };
 		FAC8E8E324FD16DE00F03A36 /* MostEmailedArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E8E224FD16DE00F03A36 /* MostEmailedArticles.swift */; };
+=======
+		FA38CE3E250BDB1F0078045B /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38CE3D250BDB1F0078045B /* Articles.swift */; };
+		FA38CE77250F823B0078045B /* FavoriteArticles.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA38CE75250F823B0078045B /* FavoriteArticles.xcdatamodeld */; };
+>>>>>>> Stashed changes
 		FAD3CE6624DD560E00812587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE6524DD560E00812587 /* AppDelegate.swift */; };
 		FAD3CE6824DD560E00812587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE6724DD560E00812587 /* SceneDelegate.swift */; };
 		FAD3CE6F24DD560E00812587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3CE6D24DD560E00812587 /* Main.storyboard */; };
@@ -18,15 +23,20 @@
 		FAD3CE7E24DD5EFA00812587 /* BL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE7D24DD5EFA00812587 /* BL.swift */; };
 		FAD3CE8E24DD821200812587 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE8D24DD821200812587 /* DetailViewController.swift */; };
 		FAD3CE9524E1D41600812587 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3CE9424E1D41600812587 /* TableViewController.swift */; };
-		FAE4A68924F83C0B00EA8444 /* MostSharedArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4A68824F83C0B00EA8444 /* MostSharedArticles.swift */; };
+		FAE4A68924F83C0B00EA8444 /* requestAnswerArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4A68824F83C0B00EA8444 /* requestAnswerArticles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71E2C42A835E569AE8B6D0F7 /* Pods_TestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94901F60FF27C6007D133E6E /* Pods-TestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask.debug.xcconfig"; path = "Target Support Files/Pods-TestTask/Pods-TestTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B2551F542337B061A7224792 /* Pods-TestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask.release.xcconfig"; path = "Target Support Files/Pods-TestTask/Pods-TestTask.release.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		FAC8E8E024FA71D500F03A36 /* MostViewedArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostViewedArticles.swift; sourceTree = "<group>"; };
 		FAC8E8E224FD16DE00F03A36 /* MostEmailedArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostEmailedArticles.swift; sourceTree = "<group>"; };
+=======
+		FA38CE3D250BDB1F0078045B /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		FA38CE76250F823B0078045B /* FavoriteArticles.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteArticles.xcdatamodel; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 		FAD3CE6224DD560E00812587 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3CE6524DD560E00812587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD3CE6724DD560E00812587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +47,7 @@
 		FAD3CE7D24DD5EFA00812587 /* BL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL.swift; sourceTree = "<group>"; };
 		FAD3CE8D24DD821200812587 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FAD3CE9424E1D41600812587 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		FAE4A68824F83C0B00EA8444 /* MostSharedArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostSharedArticles.swift; sourceTree = "<group>"; };
+		FAE4A68824F83C0B00EA8444 /* requestAnswerArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestAnswerArticles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				FAD3CE7D24DD5EFA00812587 /* BL.swift */,
-				FAE4A68824F83C0B00EA8444 /* MostSharedArticles.swift */,
-				FAC8E8E024FA71D500F03A36 /* MostViewedArticles.swift */,
-				FAC8E8E224FD16DE00F03A36 /* MostEmailedArticles.swift */,
+				FAE4A68824F83C0B00EA8444 /* requestAnswerArticles.swift */,
+				FA38CE3D250BDB1F0078045B /* Articles.swift */,
+				FA38CE75250F823B0078045B /* FavoriteArticles.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,12 +257,12 @@
 			files = (
 				FAD3CE6624DD560E00812587 /* AppDelegate.swift in Sources */,
 				FAD3CE7E24DD5EFA00812587 /* BL.swift in Sources */,
-				FAE4A68924F83C0B00EA8444 /* MostSharedArticles.swift in Sources */,
+				FAE4A68924F83C0B00EA8444 /* requestAnswerArticles.swift in Sources */,
+				FA38CE3E250BDB1F0078045B /* Articles.swift in Sources */,
+				FA38CE77250F823B0078045B /* FavoriteArticles.xcdatamodeld in Sources */,
 				FAD3CE6824DD560E00812587 /* SceneDelegate.swift in Sources */,
 				FAD3CE9524E1D41600812587 /* TableViewController.swift in Sources */,
 				FAD3CE8E24DD821200812587 /* DetailViewController.swift in Sources */,
-				FAC8E8E124FA71D500F03A36 /* MostViewedArticles.swift in Sources */,
-				FAC8E8E324FD16DE00F03A36 /* MostEmailedArticles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2C6GVHVQ9;
 				INFOPLIST_FILE = TestTask/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = TestTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,6 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2C6GVHVQ9;
 				INFOPLIST_FILE = TestTask/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = TestTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +464,22 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+<<<<<<< Updated upstream
+=======
+
+/* Begin XCVersionGroup section */
+		FA38CE75250F823B0078045B /* FavoriteArticles.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA38CE76250F823B0078045B /* FavoriteArticles.xcdatamodel */,
+			);
+			currentVersion = FA38CE76250F823B0078045B /* FavoriteArticles.xcdatamodel */;
+			path = FavoriteArticles.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+>>>>>>> Stashed changes
 	};
 	rootObject = FAD3CE5A24DD560E00812587 /* Project object */;
 }
