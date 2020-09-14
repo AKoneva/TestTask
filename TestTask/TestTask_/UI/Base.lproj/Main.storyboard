@@ -105,6 +105,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-e5-pCV">
+                                <rect key="frame" x="170" y="683" width="224" height="22"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -117,30 +123,30 @@
                             <constraint firstItem="cWi-GD-VbR" firstAttribute="centerX" secondItem="khS-wS-sAf" secondAttribute="centerX" id="OB8-bb-e9q"/>
                             <constraint firstItem="cWi-GD-VbR" firstAttribute="leading" secondItem="khS-wS-sAf" secondAttribute="leading" id="VfW-9c-u4D"/>
                             <constraint firstItem="cWi-GD-VbR" firstAttribute="top" secondItem="qNd-uN-VdT" secondAttribute="top" constant="289" id="WJm-mi-4qY"/>
+                            <constraint firstItem="RKa-qK-fTP" firstAttribute="bottom" secondItem="ll7-e5-pCV" secondAttribute="bottom" constant="108" id="WJt-gu-wDT"/>
                             <constraint firstItem="khS-wS-sAf" firstAttribute="leading" secondItem="RKa-qK-fTP" secondAttribute="leading" constant="20" id="cNH-Jj-r6P"/>
                             <constraint firstItem="RKa-qK-fTP" firstAttribute="bottom" secondItem="CMB-3w-LvB" secondAttribute="bottom" constant="150" id="gf3-Fo-UJN"/>
+                            <constraint firstItem="RKa-qK-fTP" firstAttribute="trailing" secondItem="ll7-e5-pCV" secondAttribute="trailing" constant="20" id="qNz-zo-H3h"/>
                             <constraint firstItem="RKa-qK-fTP" firstAttribute="trailing" secondItem="ZL4-iq-Nle" secondAttribute="trailing" constant="84" id="qkm-E9-eIu"/>
+                            <constraint firstItem="ll7-e5-pCV" firstAttribute="leading" secondItem="RKa-qK-fTP" secondAttribute="leading" constant="170" id="rI4-Us-9YU"/>
                             <constraint firstItem="cWi-GD-VbR" firstAttribute="top" secondItem="ZL4-iq-Nle" secondAttribute="bottom" constant="30" id="rUM-OS-pD2"/>
                             <constraint firstItem="khS-wS-sAf" firstAttribute="top" secondItem="cWi-GD-VbR" secondAttribute="bottom" constant="50" id="tC6-G3-oQx"/>
                             <constraint firstItem="ZL4-iq-Nle" firstAttribute="top" secondItem="RKa-qK-fTP" secondAttribute="top" constant="21" id="tCe-lC-i1N"/>
                             <constraint firstItem="RKa-qK-fTP" firstAttribute="trailing" secondItem="cWi-GD-VbR" secondAttribute="trailing" constant="20" id="ywS-JC-QIc"/>
+                            <constraint firstItem="ll7-e5-pCV" firstAttribute="top" secondItem="CMB-3w-LvB" secondAttribute="bottom" constant="20" id="z0s-98-WDY"/>
                             <constraint firstItem="RKa-qK-fTP" firstAttribute="trailing" secondItem="CMB-3w-LvB" secondAttribute="trailing" constant="20" id="zs7-li-Zz2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RKa-qK-fTP"/>
                     </view>
                     <navigationItem key="navigationItem" id="l2Y-Gl-EQS">
-                        <barButtonItem key="rightBarButtonItem" title="button" image="star" catalog="system" style="plain" id="4tc-VV-BI0">
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" style="plain" id="4tc-VV-BI0">
                             <connections>
                                 <action selector="addToFavorite:" destination="8Tg-4r-spu" id="ESO-w3-kBk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-<<<<<<< Updated upstream:TestTask/UI/Base.lproj/Main.storyboard
-                        <outlet property="Image" destination="ZL4-iq-Nle" id="3x7-ij-eQl"/>
-=======
                         <outlet property="DataTime" destination="ll7-e5-pCV" id="26H-Qp-hul"/>
->>>>>>> Stashed changes:TestTask/TestTask_/UI/Base.lproj/Main.storyboard
                         <outlet property="articleText" destination="khS-wS-sAf" id="DnS-aN-fOr"/>
                         <outlet property="barButtonItem" destination="4tc-VV-BI0" id="b6U-OT-9N9"/>
                         <outlet property="byAuthor" destination="CMB-3w-LvB" id="flw-vS-HcE"/>
